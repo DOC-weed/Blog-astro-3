@@ -8,6 +8,10 @@ import { siteConfig } from '@/site-config'
 
 const MAX_POSTS = 5 // max number of posts to show on the home page
 const posts = await getPosts(MAX_POSTS)
+/*const posts = await fetch(
+    'https://wordpress-749572-5061863.cloudwaysapps.com/wp-json/miapi/v1/posts'
+  ).then((res) => res.json());*/
+console.log(posts)
 ---
 
 <BaseLayout title='Home'>
